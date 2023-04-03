@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --BTNCOLLOR: #1da2f1;
+  --BGBLUE: #d7f5f5;
+  --HIGHLIGHT: #145389;
+  --BGYELLOW: #f9f8f3;
+  --LOGOCOLOR: #3d82e9;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--BGYELLOW);
+  margin: 15px 20px;
+  font-family: "Inter", sans-serif;
+}
+
+/* General style */
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  flex-direction: row;
+  background-color: var(--BTNCOLLOR);
+  border: none;
+  color: white;
+  border-radius: 3px;
+  padding: 10px;
+  gap: 5px;
+  align-items: center;
+}
+
+h1 {
+  font-size: 36px;
+  margin: 15px 0;
+}
+
+p {
+  font-size: 16px;
+  margin: 15px 0;
+  line-height: 28px;
+  opacity: 50%;
+}
+
+button img {
+  width: 15px;
+}
+
+.blue-bg {
+  background-color: var(--BGBLUE);
+}
+
+.bg-yellow {
+  background-color: var(--BGYELLOW);
+}
+
+.blue-text {
+  color: var(--HIGHLIGHT);
+  opacity: 100%;
+}
+
+.inline {
+  display: inline;
+}
+
+/* HEADER */
+
+.header {
+  flex-direction: row;
+  margin: 35px 0px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 700;
+  color: var(--LOGOCOLOR);
+}
+
+/* Menu */
+
+.sandwich-menu {
+  transform: scale(300%);
+  width: 15px;
+  margin-top: 7px;
+}
+
+.header__links {
+  display: none; /* configurar menu sandwich */
+  flex-direction: row;
+  align-items: center;
+}
+
+.header__links a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.header__links button {
+  flex-direction: row;
+}
+
+/* MAIN */
+
+.section__apresentation {
+  flex-direction: column-reverse;
+}
+
+.section__apresentation button {
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.section__apresentation img {
+  width: 20px;
+}
+.apresentation__btn {
+  margin: 10px 0 30px;
+}
+
+.apresentation__btn p {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Avatars */
+
+.apresentation__people {
+  height: 60px;
+}
+.apresentation__people img {
+  width: 45px;
+  position: absolute;
+}
+
+.child2 {
+  left: 45px;
+}
+.child3 {
+  left: 70px;
+}
+.child4 {
+  left: 95px;
+}
+.child5 {
+  left: 120px;
+}
+.child6 {
+  left: 145px;
+}
+.child7 {
+  left: 170px;
+}
+.child8 {
+  left: 195px;
+}
+.child9 {
+  left: 220px;
+}
+
+.blue-text.no-opacity {
+  font-weight: 600;
+}
+
+/* Graphic section */
+
+.section__apresentation__img {
+  padding: 20px;
+  gap: 20px;
+}
+
+.white-bg {
+  background-color: white;
+}
+
+.apresentation__graphic__info,
+.apresentation__impressions,
+.apresentation__engagement {
+  padding: 15px;
+  border-radius: 5px;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+  box-shadow: 1px 5px 10px 0.5px rgba(0, 0, 0, 0.068);
+}
+
+.apresentation__graphic h2,
+.apresentation__impressions h2,
+.apresentation__engagement h2 {
+  font-size: 15px;
+}
+
+.apresentation__graphic p,
+.apresentation__impressions p,
+.apresentation__engagement p {
+  line-height: 13px;
+  margin: 3px 0;
+  font-size: 11px;
+}
+
+.apresentation__graphic__info {
+  justify-content: flex-start;
+}
+
+.apresentation__graphic__info img {
+  width: 50px;
+}
+
+.green-circle {
+  color: cyan;
+}
+
+.apresentation__graphic__info .total {
+  border: 1px solid black;
+  width: 90px;
+  border-radius: 5px;
+  flex-direction: row;
+  padding: 10px;
+  margin-left: 30px;
+}
+
+.total p {
+  opacity: 100%;
+}
+
+.total-name::after {
+  content: "\276F";
+  font-weight: 600;
+  margin-left: 25px;
+  display: inline-block;
+  transform: rotate(90deg);
+}
+
+.graphic {
+  position: relative;
+  height: 250px;
+}
+
+.graphic hr {
+  opacity: 50%;
+}
+
+.graphic .horizontal-line {
+  position: absolute;
+  top: 50px;
+  bottom: 50px;
+  left: 20px;
+}
+
+.graphic .vertical-line {
+  position: absolute;
+  bottom: 48px;
+  left: 19.5px;
+  right: 22px;
+}
