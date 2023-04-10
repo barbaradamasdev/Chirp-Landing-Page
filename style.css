@@ -15,9 +15,14 @@
 }
 
 body {
-  background-color: var(--BGYELLOW);
-  margin: 15px 20px;
   font-family: "Inter", sans-serif;
+}
+
+/* BG */
+
+header,
+.section__apresentation {
+  background-color: var(--BGYELLOW);
 }
 
 /* General style */
@@ -36,10 +41,11 @@ button {
   padding: 10px;
   gap: 5px;
   align-items: center;
+  cursor: pointer;
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 35px;
   margin: 15px 0;
 }
 
@@ -47,6 +53,8 @@ p {
   font-size: 16px;
   margin: 15px 0;
   line-height: 28px;
+}
+.opacity {
   opacity: 50%;
 }
 
@@ -75,16 +83,18 @@ button img {
 
 .header {
   flex-direction: row;
-  margin: 35px 0px;
   align-items: center;
   justify-content: space-between;
 }
 
-header .logo {
+header .logo,
+footer .logo {
   font-size: 20px;
   font-style: italic;
   font-weight: 700;
   color: var(--LOGOCOLOR);
+  margin: 15px 20px;
+  cursor: pointer;
 }
 
 /* Menu */
@@ -92,7 +102,7 @@ header .logo {
 .sandwich-menu {
   transform: scale(300%);
   width: 15px;
-  margin-top: 7px;
+  margin: 15px 20px;
 }
 
 .header__links {
@@ -113,6 +123,11 @@ header .logo {
 
 /* MAIN */
 
+.section__apresentation__text,
+.section__apresentation__img {
+  margin: 20px;
+}
+
 .section__apresentation {
   flex-direction: column-reverse;
 }
@@ -132,6 +147,7 @@ header .logo {
 }
 .apresentation__btn {
   margin: 10px 0 30px;
+  cursor: pointer;
 }
 
 .apresentation__btn p {
@@ -147,32 +163,45 @@ header .logo {
 }
 .apresentation__people img {
   width: 45px;
+}
+
+.child1 {
   position: absolute;
+}
+.child2,
+.child3,
+.child4,
+.child5,
+.child6,
+.child7,
+.child8,
+.child9 {
+  position: relative;
 }
 
 .child2 {
-  left: 45px;
+  left: 25px;
 }
 .child3 {
-  left: 70px;
+  left: 0px;
 }
 .child4 {
-  left: 95px;
+  left: -25px;
 }
 .child5 {
-  left: 120px;
+  left: -50px;
 }
 .child6 {
-  left: 145px;
+  left: -75px;
 }
 .child7 {
-  left: 170px;
+  left: -100px;
 }
 .child8 {
-  left: 195px;
+  left: -125px;
 }
 .child9 {
-  left: 220px;
+  left: -150px;
 }
 
 .blue-text.no-opacity {
@@ -188,6 +217,15 @@ header .logo {
 
 .white-bg {
   background-color: white;
+}
+
+.apresentation__graphic {
+  width: 295px;
+  max-width: 100%;
+  margin: auto;
+}
+.apresentation__graphic__number {
+  gap: 20px;
 }
 
 .apresentation__graphic__info,
@@ -269,4 +307,427 @@ header .logo {
   bottom: 48px;
   left: 19.5px;
   right: 22px;
+}
+
+.graphic-img {
+  height: 200px;
+  position: absolute;
+  left: 19.5px;
+}
+
+img.graphic-img {
+  width: 250px;
+}
+
+.blue-bar {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(109, 175, 226, 0.644),
+    rgba(86, 100, 163, 0)
+  );
+  border-radius: 8px;
+  width: 35px;
+  height: 130px;
+  position: absolute;
+  top: 60px;
+  left: 90px;
+}
+
+.no-border {
+  box-shadow: none;
+}
+
+.graphic-circle {
+  position: absolute;
+  width: 15px;
+  background-color: rgb(89, 224, 224);
+  height: 15px;
+  top: 90px;
+  left: 100px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.followers {
+  position: absolute;
+  top: 75px;
+  left: 130px;
+  background-color: #145389;
+  color: white;
+  font-weight: 600;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.label-followers {
+  position: absolute;
+  top: 93px;
+  left: 125px;
+  background-color: #145389;
+  border-left: 2px solid #145389;
+  border-bottom: 2px solid #145389;
+  padding: 4px;
+  transform: rotate(45deg);
+}
+
+/* Section Features */
+
+.section__features {
+  padding: 60px 20px 20px;
+}
+
+.section__features h3 {
+  font-size: 34px;
+  margin: 20px 0;
+}
+
+.section__features h2 {
+  font-size: 18px;
+}
+
+.section__features img {
+  width: 40px;
+  margin-bottom: 15px;
+}
+
+.features-card {
+  padding: 20px;
+  border: 1px solid rgba(128, 128, 128, 0.315);
+  border-radius: 5px;
+  margin: 12px 0;
+}
+
+.features-card p {
+  margin-bottom: 0;
+}
+
+/* Section Testimonials */
+
+.section__testimonials {
+  padding: 20px;
+}
+
+.section__testimonials h3 {
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+
+.testimonials-card {
+  background-color: white;
+  border-radius: 6px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.testimonials-card-profile,
+.likes-date,
+.likes {
+  flex-direction: row;
+}
+
+.testimonials-card-profile {
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.avatar {
+  height: 60px;
+  margin-right: 10px;
+}
+
+.space {
+  width: 80px;
+}
+
+.testimonials-card p {
+  margin: 0;
+}
+
+.name {
+  width: 110px;
+}
+.name h2 {
+  font-size: 18px;
+}
+
+.name p {
+  font-size: 14px;
+}
+
+.likes-date {
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.icon-heart {
+  background-image: url(Assets/icon-heart-border.png);
+  width: 25px;
+  height: 25px;
+  margin: 2px 5px 0 0;
+  background-size: contain;
+  display: inline-block;
+}
+
+.icon-heart:hover {
+  background-image: url(Assets/icon-heart.png);
+}
+
+/* Section Plan */
+
+.section__plan {
+  margin: 60px 20px;
+}
+
+.section__plan h3 {
+  font-size: 35px;
+  text-align: center;
+}
+
+.plan-card h4 {
+  margin: 20px;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.price-plan {
+  flex-direction: row;
+  margin: 0 20px 30px;
+}
+
+.plan-card .price {
+  font-size: 50px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.plan-card .month {
+  margin: 0;
+  font-weight: 500;
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+.section__plan p {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section__plan .plan-card {
+  border: 1px solid rgb(238, 190, 86);
+  border-radius: 10px;
+}
+
+.check {
+  flex-direction: row;
+  gap: 15px;
+  margin: 20px;
+}
+
+.check img {
+  margin-bottom: auto;
+}
+
+.check p {
+  text-align: left;
+  margin: 0;
+}
+
+.plan-card hr {
+  width: 290px;
+  margin: auto;
+  opacity: 50%;
+}
+
+.plan-card button {
+  flex-direction: row;
+  justify-content: center;
+  font-size: 20px;
+  padding: 15px;
+  margin: 20px auto 30px;
+  width: 300px;
+}
+
+.plan-card button img {
+  width: 25px;
+}
+
+/* Footer */
+.footer img {
+  width: 30px;
+  cursor: pointer;
+}
+
+.footer__links {
+  flex-direction: row;
+  margin: 0 40px 20px 20px;
+  justify-content: space-between;
+}
+
+.footer__links a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Tablet */
+@media screen and (min-width: 481px) {
+  .apresentation__graphic {
+    margin: 0;
+  }
+
+  .apresentation__impressions,
+  .apresentation__engagement {
+    flex-direction: column-reverse;
+  }
+
+  .section__apresentation__img {
+    flex-direction: row;
+    max-width: 650px;
+  }
+
+  .apresentation__btn {
+    flex-direction: row;
+  }
+
+  .apresentation__btn button {
+    max-width: 230px;
+    font-size: 16px;
+  }
+
+  .apresentation__btn p {
+    max-width: 160px;
+    margin: 15px;
+    font-size: 16px;
+  }
+
+  .avatar-text {
+    max-width: 80%;
+  }
+
+  .section__testimonials h3 {
+    margin: 20px 0;
+  }
+  .testimonials-card-flex {
+    overflow: auto;
+    flex-direction: row;
+    gap: 0px;
+  }
+
+  .testimonials-card {
+    transform: scale(90%);
+  }
+
+  .testimonials-card:nth-child(1) {
+    height: 250px;
+  }
+
+  .testimonials-card:nth-child(3) {
+    height: 250px;
+  }
+
+  .plan-card {
+    max-width: 400px;
+    margin: auto;
+  }
+
+  .plan-card hr {
+    width: 90%;
+  }
+
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer__links {
+    gap: 20px;
+    align-items: center;
+    margin: 15px 20px;
+  }
+}
+
+@media screen and (min-width: 690px) {
+  .section__apresentation__img {
+    margin: auto;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 950px) {
+  /* HEADER desktop*/
+
+  .header {
+    padding-top: 15px;
+  }
+  .center {
+    max-width: 920px;
+    margin: auto;
+  }
+
+  .header .logo {
+    margin-left: 0;
+  }
+
+  .sandwich-menu {
+    display: none;
+  }
+
+  .header__links {
+    display: inherit;
+  }
+
+  /* Section apresentation */
+
+  .section__apresentation {
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .section__apresentation__img {
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .section__apresentation__text {
+    max-width: 521px;
+  }
+
+  .apresentation__impressions,
+  .apresentation__engagement {
+    flex-direction: row;
+  }
+
+  /* Sections Features */
+
+  .section__features h3,
+  .section__testimonials h3 {
+    width: 920px;
+    margin: auto;
+  }
+  .features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 960px;
+    margin: auto;
+  }
+  .features-card {
+    margin: 20px;
+  }
+
+  .features-card:nth-child(1) {
+    grid-column: 1 / 2;
+  }
+
+  /* Section Testimonials */
+  .testimonials-card-flex {
+    max-width: 960px;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .footer .logo {
+    margin-left: 0;
+  }
 }
